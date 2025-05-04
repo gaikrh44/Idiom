@@ -1,5 +1,5 @@
- // Navigation
- document.getElementById('homeLink').addEventListener('click', function(e) {
+// Navigation
+document.getElementById('homeLink').addEventListener('click', function(e) {
     e.preventDefault();
     hideAllSections();
     document.getElementById('home').style.display = 'block';
@@ -17,10 +17,17 @@ document.getElementById('idiomsLink').addEventListener('click', function(e) {
     document.getElementById('idioms').style.display = 'block';
 });
 
+document.getElementById('ourWorkLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    hideAllSections();
+    document.getElementById('our-work').style.display = 'block';
+});
+
 function hideAllSections() {
     document.getElementById('home').style.display = 'none';
     document.getElementById('about').style.display = 'none';
     document.getElementById('idioms').style.display = 'none';
+    document.getElementById('our-work').style.display = 'none';
 }
 
 // Modal functionality
